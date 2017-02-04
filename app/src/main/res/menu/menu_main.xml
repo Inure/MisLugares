@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Configuración"
+        android:id="@+id/config"
+        android:icon="@android:drawable/ic_menu_preferences"
+        android:orderInCategory="95"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:title="Acerca de..."
+        android:id="@+id/acercaDe"
+        android:icon="@android:drawable/ic_menu_info_details"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:title="Buscar"
+        android:id="@+id/menu_buscar"
+        android:orderInCategory="90"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always|collapseActionView"/>
+
+</menu>
