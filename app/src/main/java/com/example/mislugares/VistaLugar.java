@@ -232,7 +232,7 @@ public class VistaLugar extends AppCompatActivity {
         Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
         uriFoto = Uri.fromFile(
                 new File(Environment.getExternalStorageDirectory() + File.separator
-                        + "/Download/img_" + (System.currentTimeMillis() / 1000) + ".jpg"));
+                        + "/Download/img_" + (System.currentTimeMillis() / 1000) + ".jpg"));  //He puesto el directorio tal cual lo pone en mi emulador
         intent.putExtra(MediaStore.EXTRA_OUTPUT, uriFoto);
         startActivityForResult(intent, RESULTADO_FOTO);
     }
